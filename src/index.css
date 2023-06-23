@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
