@@ -49,7 +49,19 @@ export default function Home() {
   const getSortFilter = (snacksList, appliedFiltersVal) => {
     let filtered = [...snacksList];
 
-    filtered.sort();
+    filtered.sort((a, b) => {
+      if (
+        a[appliedFiltersVal.headingFilter] < b[appliedFiltersVal.headingFilter]
+      ) {
+        return -1;
+      }
+      if (
+        a[appliedFiltersVal.headingFilter] > b[appliedFiltersVal.headingFilter]
+      ) {
+        return 1;
+      }
+      return 0;
+    });
 
     if (appliedFiltersVal.filterState) {
       return filtered;
