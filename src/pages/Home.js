@@ -60,7 +60,7 @@ export default function Home() {
 
   const filteredSearchData = searchFilter(snacks, filters);
 
-  const filteredData = getSortFilter(snacks, filters);
+  const filteredData = getSortFilter(filteredSearchData, filters);
 
   return (
     <>
